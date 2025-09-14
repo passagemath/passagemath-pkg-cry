@@ -23,18 +23,7 @@ dependencies = [
 [project.urls]
 repository = "http://github.com/hellman/cry"
 
-[tool.poetry.dependencies]
-python = "^3.5"
-binteger = "^0.8.0"
-
-passagemath-brial = { version = "^10.6", optional = true }
-passagemath-modules = { version = "^10.6", optional = true }
-passagemath-plot = { version = "^10.6", optional = true }
-passagemath-repl = { version = "^10.6", optional = true }
-passagemath-schemes = { version = "^10.6", optional = true }
-passagemath-symbolics = { version = "^10.6", optional = true }
-
-[tool.poetry.extras]
+[project.optional-dependencies]
 passagemath = [
     "passagemath-brial",
     "passagemath-modules",
